@@ -1,0 +1,171 @@
+.site-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+.site-header .logo {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.site-header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+.site-header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.site-header nav a:hover {
+  color: #c66b45;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease;
+}
+.btn--primary {
+  background-color: #c66b45;
+  color: #fff;
+}
+.btn--primary:hover {
+  background-color: #b05a3b;
+}
+.btn--secondary {
+  background-color: transparent;
+  color: #c66b45;
+  border: 2px solid #c66b45;
+}
+.btn--secondary:hover {
+  background-color: #c66b45;
+  color: #fff;
+}
+
+.hero {
+  position: static;
+  background: url('images/drew-coffman-1872.jpg') center/cover no-repeat;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.hero__overlay {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+.hero__inner {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.hero__title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.hero__tagline {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+.hero__buttons .btn {
+  margin: 0 0.5rem;
+}
+
+.about {
+  padding: 5rem 1rem;
+  background-color: #222;
+}
+.about__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about__text {
+  flex: 1 1 400px;
+  padding: 1rem;
+}
+.about__heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.about__description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #ddd;
+}
+.about__list {
+  list-style: none;
+  padding-left: 0;
+}
+.about__list li {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  margin-bottom: 1rem;
+  color: #ddd;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.about__list li i {
+  position: static;
+  color: inherit;
+  font-size: 1.2rem;
+}
+.about__image {
+  flex: 1 1 300px;
+  padding: 1rem;
+  text-align: center;
+}
+.about__image img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  display: inline-block;
+}
+.logo-img {
+  height: 40px;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+.icon-bg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #c66b45;
+  border-radius: 50%;
+  width: 2.2rem;
+  height: 2.2rem;
+  margin-right: 0.7rem;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.icon-bg i {
+  color: #c66b45;
+  font-size: 1.2rem;
+}
